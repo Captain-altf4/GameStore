@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>GameStore</id>
+    <version>1.0.0</version>
+    <authors>GameStore</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="MaterialDesignThemes" version="4.4.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\GameStore.runtimeconfig.json" target="lib\netcoreapp3.1\GameStore.runtimeconfig.json" />
+    <file src="E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\GameStore.dll" target="lib\netcoreapp3.1\GameStore.dll" />
+  </files>
+</package>

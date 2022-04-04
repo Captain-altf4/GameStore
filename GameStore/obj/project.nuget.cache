@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zmM/RXgQhzkL1nDelkSeUZBLYLw8/3dLhBA5wTwFCEiO4kveaRC8R+EyLFfmIj1ibsmaFn3Ha4iKlxb8vv4riA==",
+  "success": true,
+  "projectFilePath": "E:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Win10m\\.nuget\\packages\\materialdesigncolors\\2.0.5\\materialdesigncolors.2.0.5.nupkg.sha512",
+    "C:\\Users\\Win10m\\.nuget\\packages\\materialdesignthemes\\4.4.0\\materialdesignthemes.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,66 @@
+﻿<Window x:Class="GameStore.Views.AuthWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameStore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="{StaticResource AuthBack}"/>
+    </Window.Background>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="130*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="40*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="220*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tb_Login" 
+                 Grid.Column="1" 
+                 Grid.ColumnSpan="3" 
+                 Grid.Row="1"
+                 materialDesign:HintAssist.Hint="Введите логин"
+                 Background="White"
+                 FontSize="16"
+                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Login_TextChanged"/>
+        <PasswordBox x:Name="pb_Password"
+                     Grid.Column="1"
+                     Grid.ColumnSpan="3"
+                     Grid.Row="3"
+                     materialDesign:HintAssist.Hint="Введите пароль"
+                     Background="White"
+                     FontSize="16"
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password_PasswordChanged"/>
+        <Button x:Name="b_Back" 
+                Grid.Column="1" 
+                Grid.Row="5" 
+                Content="РЕГИСТРАЦИЯ" 
+                FontSize="11" 
+                Background="#FF212121" 
+                BorderBrush="#FF212121"
+                Command="{Binding ChangeToRegWindow}"/>
+        <Button x:Name="b_Join"
+                Grid.Column="3"
+                Grid.Row="5"
+                Content="ВОЙТИ"
+                FontSize="11"
+                Background="#FF212121"
+                BorderBrush="#FF212121"/>
+
+    </Grid>
+</Window>
