@@ -6,7 +6,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStore"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        x:Name="AWindow"
+        Title="MainWindow" 
+        Height="350" 
+        Width="600" 
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource AuthBack}"/>
     </Window.Background>
@@ -46,13 +51,14 @@
                      Background="White"
                      FontSize="16"
                      materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password_PasswordChanged"/>
-        <Button x:Name="b_Back" 
+        <Button x:Name="b_Reg" 
                 Grid.Column="1" 
                 Grid.Row="5" 
                 Content="РЕГИСТРАЦИЯ" 
                 FontSize="11" 
                 Background="#FF212121" 
                 BorderBrush="#FF212121"
+                Cursor="Hand"
                 Command="{Binding ChangeToRegWindow}"/>
         <Button x:Name="b_Join"
                 Grid.Column="3"

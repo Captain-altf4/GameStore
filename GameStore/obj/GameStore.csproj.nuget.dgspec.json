@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj": {}
+    "F:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj": {}
   },
   "projects": {
-    "E:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj": {
+    "F:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj",
+        "projectUniqueName": "F:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj",
         "projectName": "GameStore",
-        "projectPath": "E:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj",
+        "projectPath": "F:\\Ли Александр\\GameStore\\GameStore\\GameStore.csproj",
         "packagesPath": "C:\\Users\\Win10m\\.nuget\\packages\\",
-        "outputPath": "E:\\Ли Александр\\GameStore\\GameStore\\obj\\",
+        "outputPath": "F:\\Ли Александр\\GameStore\\GameStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -6,7 +6,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameStore"
         mc:Ignorable="d"
-        Title="RegWindow" Height="350" Width="600">
+        x:Name="RWindow"
+        Title="RegWindow" 
+        Height="350" 
+        Width="600"
+        ResizeMode="NoResize" 
+        WindowStartupLocation="CenterScreen">
     <Window.Background>
         <ImageBrush ImageSource="{StaticResource RegBack}"/>
     </Window.Background>
@@ -41,7 +46,7 @@
                  materialDesign:HintAssist.Hint="Введите логин" 
                  Background="White" 
                  FontSize="16"
-                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"/>
+                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Login_TextChanged"/>
         <TextBox x:Name="tb_Mail"
                  Grid.Column="1" 
                  Grid.ColumnSpan="3" 
@@ -49,7 +54,7 @@
                  materialDesign:HintAssist.Hint="Введите почту" 
                  Background="White" 
                  FontSize="16"
-                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"/>
+                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Mail_TextChanged"/>
         <PasswordBox x:Name="pb_Password1" 
                      Grid.Column="1"
                      Grid.ColumnSpan="3" 
@@ -57,7 +62,7 @@
                      materialDesign:HintAssist.Hint="Введите пароль"
                      Background="White" 
                      FontSize="16"
-                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"/>
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password1_PasswordChanged"/>
         <PasswordBox x:Name="pb_Password2"
                      Grid.Column="1"
                      Grid.ColumnSpan="3"
@@ -65,14 +70,16 @@
                      materialDesign:HintAssist.Hint="Повторите пароль"
                      Background="White"
                      FontSize="16"
-                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"/>
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password2_PasswordChanged"/>
         <Button x:Name="b_Auth" 
                 Grid.Column="1" 
                 Grid.Row="9" 
                 Content="ВОЙТИ" 
                 FontSize="11"
                 Background="#FF212121"
-                BorderBrush="#FF212121"/>
+                BorderBrush="#FF212121"
+                Cursor="Hand"
+                Command="{Binding ChangeToAuthWindow}"/>
         <Button x:Name="b_Reg"
                 Grid.Column="3"
                 Grid.Row="9" 
