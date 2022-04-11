@@ -1,4 +1,5 @@
-﻿using GameStore.ViewModel;
+﻿using GameStore.Custom_Controlls;
+using GameStore.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +25,9 @@ namespace GameStore.Views
         public AuthWindow()
         {
             InitializeComponent();
+            WindowBorder windowBorder = new WindowBorder(this);
+            windowBorder.SetValue(Grid.RowProperty, 0);
+            MainGrid.Children.Add(windowBorder);
             //DataContext = new AuthWindowModel(); //Связывает View со своей моделью
         }
 

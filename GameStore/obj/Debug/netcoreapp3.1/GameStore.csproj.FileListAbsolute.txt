@@ -76,3 +76,6 @@ F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GameStore
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GameStore.dll
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GameStore.pdb
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GameStore.genruntimeconfig.cache
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder.g.cs
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder.baml

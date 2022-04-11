@@ -28,7 +28,7 @@ namespace GameStore.ViewModel
                         CloseWindow();
                     }));
             }
-
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

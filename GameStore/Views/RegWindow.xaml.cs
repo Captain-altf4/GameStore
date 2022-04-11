@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GameStore.Custom_Controlls;
 using GameStore.ViewModel;
 
 namespace GameStore.Views
@@ -21,7 +22,10 @@ namespace GameStore.Views
         public RegWindow()
         {
             InitializeComponent();
-            DataContext = new RegWindowModel();
+            WindowBorder windowBorder = new WindowBorder(this);
+            windowBorder.SetValue(Grid.RowProperty, 0);
+            MainGrid.Children.Add(windowBorder);
+            //DataContext = new RegWindowModel();
         }
 
         private void tb_Login_TextChanged(object sender, TextChangedEventArgs e)

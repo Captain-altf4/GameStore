@@ -10,82 +10,87 @@
         Title="RegWindow" 
         Height="350" 
         Width="600"
-        ResizeMode="NoResize" 
-        WindowStartupLocation="CenterScreen">
-    <Window.Background>
-        <ImageBrush ImageSource="{StaticResource RegBack}"/>
-    </Window.Background>
-    <Grid>
-        <Grid.Background>
-            <ImageBrush/>
-        </Grid.Background>
+        WindowStartupLocation="CenterScreen" 
+        AllowsTransparency="True"
+        WindowStyle="None">
+    <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="20*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="40*"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="300*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="100*"/>
-            <ColumnDefinition Width="220*"/>
-        </Grid.ColumnDefinitions>
-        <TextBox x:Name="tb_Login" 
-                 Grid.Column="1" 
-                 Grid.ColumnSpan="3"  
-                 Grid.Row="1" 
-                 materialDesign:HintAssist.Hint="Введите логин" 
-                 Background="White" 
-                 FontSize="16"
-                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Login_TextChanged"/>
-        <TextBox x:Name="tb_Mail"
-                 Grid.Column="1" 
-                 Grid.ColumnSpan="3" 
-                 Grid.Row="3"
-                 materialDesign:HintAssist.Hint="Введите почту" 
-                 Background="White" 
-                 FontSize="16"
-                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Mail_TextChanged"/>
-        <PasswordBox x:Name="pb_Password1" 
-                     Grid.Column="1"
-                     Grid.ColumnSpan="3" 
-                     Grid.Row="5" 
-                     materialDesign:HintAssist.Hint="Введите пароль"
+        <Grid
+            Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="{StaticResource RegBack}"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="70*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="220*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tb_Login" 
+                     Grid.Column="1" 
+                     Grid.ColumnSpan="3"  
+                     Grid.Row="1" 
+                     materialDesign:HintAssist.Hint="Введите логин" 
                      Background="White" 
                      FontSize="16"
-                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password1_PasswordChanged"/>
-        <PasswordBox x:Name="pb_Password2"
-                     Grid.Column="1"
-                     Grid.ColumnSpan="3"
-                     Grid.Row="7"
-                     materialDesign:HintAssist.Hint="Повторите пароль"
-                     Background="White"
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Login_TextChanged"/>
+            <TextBox x:Name="tb_Mail"
+                     Grid.Column="1" 
+                     Grid.ColumnSpan="3" 
+                     Grid.Row="3"
+                     materialDesign:HintAssist.Hint="Введите почту" 
+                     Background="White" 
                      FontSize="16"
-                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password2_PasswordChanged"/>
-        <Button x:Name="b_Auth" 
-                Grid.Column="1" 
-                Grid.Row="9" 
-                Content="ВОЙТИ" 
-                FontSize="11"
-                Background="#FF212121"
-                BorderBrush="#FF212121"
-                Cursor="Hand"
-                Command="{Binding ChangeToAuthWindow}"/>
-        <Button x:Name="b_Reg"
-                Grid.Column="3"
-                Grid.Row="9" 
-                Content="РЕГИСТРАЦИЯ"
-                FontSize="11"
-                Background="#FF212121"
-                BorderBrush="#FF212121"/>
+                     materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" TextChanged="tb_Mail_TextChanged"/>
+            <PasswordBox x:Name="pb_Password1" 
+                         Grid.Column="1"
+                         Grid.ColumnSpan="3" 
+                         Grid.Row="5" 
+                         materialDesign:HintAssist.Hint="Введите пароль"
+                         Background="White" 
+                         FontSize="16"
+                         materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password1_PasswordChanged"/>
+            <PasswordBox x:Name="pb_Password2"
+                         Grid.Column="1"
+                         Grid.ColumnSpan="3"
+                         Grid.Row="7"
+                         materialDesign:HintAssist.Hint="Повторите пароль"
+                         Background="White"
+                         FontSize="16"
+                         materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" PasswordChanged="pb_Password2_PasswordChanged"/>
+            <Button x:Name="b_Auth" 
+                    Grid.Column="1" 
+                    Grid.Row="9" 
+                    Content="ВОЙТИ" 
+                    FontSize="11"
+                    Background="#FF212121"
+                    BorderBrush="#FF212121"
+                    Cursor="Hand"
+                    Command="{Binding ChangeToAuthWindow}"/>
+            <Button x:Name="b_Reg"
+                    Grid.Column="3"
+                    Grid.Row="9" 
+                    Content="РЕГИСТРАЦИЯ"
+                    FontSize="11"
+                    Background="#FF212121"
+                    BorderBrush="#FF212121"/>
+        </Grid>
     </Grid>
 </Window>
