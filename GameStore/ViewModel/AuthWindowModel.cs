@@ -6,14 +6,25 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace GameStore.ViewModel
 {
     class AuthWindowModel : INotifyPropertyChanged
     {
         public event EventHandler EventCloseWindow;
-
         string currentUserLogin;
+
+        public string CurrentUserLogin
+        {
+            get { return currentUserLogin; }
+            set
+            {
+                currentUserLogin = value;
+                OnPropertyChanged("CurrentUserLogin");
+            }
+        }
+
         private BaseCommands changeToRegWindow;
 
         public BaseCommands ChangeToRegWindow
@@ -26,6 +37,21 @@ namespace GameStore.ViewModel
                     {
                         WindowsBuilder.ShowRegWindow();
                         CloseWindow();
+                    }));
+            }
+        }
+
+        private BaseCommands loginUser;
+        
+        public BaseCommands LoginUser
+        {
+            get
+            {
+                return loginUser ??
+                    (loginUser = new BaseCommands(obj =>
+                    {
+                        PasswordBox pb = (PasswordBox)obj;
+                        MessageBox.Show($"Текущий пользователь: {currentUserLogin} {pb.Password}");
                     }));
             }
         }
