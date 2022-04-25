@@ -25,7 +25,9 @@ namespace GameStore
             {
                 using (DBContext db = new DBContext())
                 {
-                    db.Database.Initialize(false);
+                    db.Database.Initialize(true);
+                    db.Game = null;
+                    db.User = null;
 
                     if (db.User.Count() == 0 && db.Game.Count() == 0)
                     {
