@@ -10,12 +10,21 @@
     <Compile Update="Custom Controlls\WindowBorder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Custom Controlls\WindowBorder_MaxBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\RegWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StoreWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Custom Controlls\WindowBorder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Custom Controlls\WindowBorder_MaxBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\AuthWindow.xaml">
@@ -25,6 +34,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ResDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StoreWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -86,3 +86,13 @@ F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\
 F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image1.jpg
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image2.jpg
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image3.jpg
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image4.jpg
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image5.jpg
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.g.cs
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.baml
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder_MaxBox.g.cs
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder_MaxBox.baml
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.g.cs

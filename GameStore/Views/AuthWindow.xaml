@@ -18,8 +18,8 @@
             <RowDefinition Height="35"/>
             <RowDefinition Height="300*"/>
         </Grid.RowDefinitions>
-        <Grid 
-            Grid.Row="1">
+        <Grid x:Name="ContentGrid"
+              Grid.Row="1">
             <Grid.Background>
                 <ImageBrush ImageSource="{StaticResource AuthBack}"/>
             </Grid.Background>
@@ -47,8 +47,7 @@
                 Background="White"
                 FontSize="16"
                 materialDesign:TextFieldAssist.UnderlineBrush="#FF212121" 
-                Text="{Binding CurrentUserLogin}"
-                TextChanged="tb_Login_TextChanged"/>
+                Text="{Binding CurrentUserLogin}"/>
             <PasswordBox x:Name="pb_Password"
                 Grid.Column="1"
                 Grid.ColumnSpan="3"
@@ -56,8 +55,7 @@
                 materialDesign:HintAssist.Hint="Введите пароль"
                 Background="White"
                 FontSize="16"
-                materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"
-                PasswordChanged="pb_Password_PasswordChanged"/>
+                materialDesign:TextFieldAssist.UnderlineBrush="#FF212121"/>
             <Button x:Name="b_Reg" 
                 Grid.Column="1" 
                 Grid.Row="5" 

@@ -1,8 +1,10 @@
 ﻿using GameStore.Command;
+using GameStore.ModelContext;
 using GameStore.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows;
@@ -51,7 +53,24 @@ namespace GameStore.ViewModel
                     (loginUser = new BaseCommands(obj =>
                     {
                         PasswordBox pb = (PasswordBox)obj;
-                        MessageBox.Show($"Текущий пользователь: {currentUserLogin} {pb.Password}");
+                        using(DBContext db = new DBContext())
+                        {
+                            var user = db.User.Where(u => u.Login == currentUserLogin &&
+                                                     u.Password == pb.Password).FirstOrDefault();
+
+                            if(user != null)
+                            {
+                                LoginData.CurrentUser.Id = user.Id;
+                                LoginData.CurrentUser.Login = user.Login;
+                                LoginData.CurrentUser.UserMail = user.Mail;
+                                WindowsBuilder.ShowStoreWindow();
+                                CloseWindow();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Пользователь не найден!");
+                            }
+                        }
                     }));
             }
         }

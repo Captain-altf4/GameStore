@@ -30,16 +30,26 @@ namespace GameStore
                     if (db.User.Count() == 0 && db.Game.Count() == 0)
                     {
                         string imagePath = @"Images\Games\";
-                        Game Astroneer = new Game(1, "Astroneer", 200, imagePath + "image1");
+                        Game Astroneer = new Game(1, "Astroneer", 600, imagePath + "image1.jpg");
                         db.Game.Add(Astroneer);
-                        Game RDR = new Game(1, "Red Dead Redemption", 200, imagePath + "image2");
+                        Game RDR = new Game(2, "Red Dead Redemption", 1200, imagePath + "image2.jpg");
                         db.Game.Add(RDR);
-                        Game StreetFighters = new Game(1, "Street Fighters", 200, imagePath + "image1");
+                        Game StreetFighters = new Game(3, "Street Fighters", 500, imagePath + "image3.jpg");
                         db.Game.Add(StreetFighters);
+                        Game Warcraft3 = new Game(4, "Warcraft", 1000, imagePath + "image4.jpg");
+                        db.Game.Add(Warcraft3);
+                        Game RoR2 = new Game(5, "Risk of Rain 2", 800, imagePath + "image5.jpg");
+                        db.Game.Add(RoR2);
+                        /*Game RoR2 = new Game(6, "Risk of Rain 2", 800, imagePath + "image5.jpg");
+                        db.Game.Add(RoR2);
+                        Game RoR2 = new Game(7, "Risk of Rain 2", 800, imagePath + "image5.jpg");
+                        db.Game.Add(RoR2);
+                        Game RoR2 = new Game(8, "Risk of Rain 2", 800, imagePath + "image5.jpg");
+                        db.Game.Add(RoR2);*/
 
-                        User qwerty123 = new User(0, "qwerty123", "qwerty123@mail.ru", "qwerty123");
+                        User qwerty123 = new User(1, "qwerty123", "qwerty123@mail.ru", "qwerty123");
                         db.User.Add(qwerty123);
-                        User GL = new User(0, "GL", "Grenade@mail.ru", "!!BOOM!!");
+                        User GL = new User(2, "GL", "Grenade@mail.ru", "BOOM");
                         db.User.Add(GL);
                         qwerty123.Games.Add(RDR);
                         qwerty123.Games.Add(Astroneer);
@@ -48,9 +58,9 @@ namespace GameStore
                     }
                 }
             }
-            catch
+            catch(Exception e)
             {
-                MessageBox.Show("Ошибка Инициализации БД!");
+                MessageBox.Show($"Ошибка Инициализации БД: {e.Message}");
             }
         }
     }

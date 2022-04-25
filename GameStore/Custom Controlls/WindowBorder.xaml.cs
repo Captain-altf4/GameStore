@@ -13,9 +13,6 @@ using System.Windows.Shapes;
 
 namespace GameStore.Custom_Controlls
 {
-    /// <summary>
-    /// Логика взаимодействия для WindowBorder.xaml
-    /// </summary>
     public partial class WindowBorder : UserControl
     {
         Window parent;

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 F:\Ли Александр\GameStore\GameStore\App.xaml
-4-306417189
+61799131330
 
-16-1399397140
+191865089978
 197-1962033740
-Custom Controlls\WindowBorder.xaml;ResDictionary.xaml;Views\AuthWindow.xaml;Views\RegWindow.xaml;
+Custom Controlls\WindowBorder.xaml;Custom Controlls\WindowBorderMaxBox.xaml;ResDictionary.xaml;Views\AuthWindow.xaml;Views\RegWindow.xaml;Views\StoreWindow.xaml;
 
 False
 

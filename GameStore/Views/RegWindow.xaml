@@ -18,8 +18,8 @@
             <RowDefinition Height="35"/>
             <RowDefinition Height="300*"/>
         </Grid.RowDefinitions>
-        <Grid
-            Grid.Row="1">
+        <Grid x:Name="ContentGrid"
+              Grid.Row="1">
             <Grid.Background>
                 <ImageBrush ImageSource="{StaticResource RegBack}"/>
             </Grid.Background>
