@@ -8,7 +8,7 @@
              d:DesignHeight="35" 
              d:DesignWidth="600"
              Background="White" 
-             MouseDown="UserControl_MouseDown" >
+             MouseDown="UserControl_MouseDown" MouseDoubleClick="UserControl_MouseDoubleClick" >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="520*"/>

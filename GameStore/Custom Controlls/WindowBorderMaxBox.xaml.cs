@@ -52,5 +52,13 @@ namespace GameStore.Custom_Controlls
         {
             this.parent.Close();
         }
+
+        private void UserControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (parent.WindowState == WindowState.Maximized)
+                parent.WindowState = WindowState.Normal;
+            else
+                parent.WindowState = WindowState.Maximized;
+        }
     }
 }

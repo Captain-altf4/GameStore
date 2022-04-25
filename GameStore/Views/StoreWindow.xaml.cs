@@ -54,13 +54,28 @@ namespace GameStore.Views
                 int index = 0;
                 foreach (Game game in db.Game)
                 {
+                    StackPanel sp = new StackPanel();
+                    sp.SetValue(Grid.RowProperty, rowNum);
+                    sp.SetValue(Grid.ColumnProperty, columnNum);
+
+                    Label price = new Label();
+                    price.HorizontalAlignment = HorizontalAlignment.Center;
+                    price.Content = game.Price;
+
+                    Label name = new Label();
+                    name.HorizontalAlignment = HorizontalAlignment.Center;
+                    name.Content = game.Name;
+
                     Image currentImage = new Image();
                     BitmapImage logo = DataTransform.ByteToJpg(game.Image);
                     currentImage.Source = logo;
-                    currentImage.SetValue(Grid.RowProperty, rowNum);
-                    currentImage.SetValue(Grid.ColumnProperty, columnNum);
                     columnNum = (columnNum == 1) ? 3 : 1;
-                    GameGrid.Children.Add(currentImage);
+
+                    sp.Children.Add(currentImage);
+                    sp.Children.Add(name);
+                    sp.Children.Add(price);
+                    GameGrid.Children.Add(sp);
+
                     if ((index + 1) % 2 == 0)
                         rowNum += 2;
                     index++;

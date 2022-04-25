@@ -9,7 +9,8 @@
         Height="450" 
         Width="800"
         WindowStartupLocation="CenterScreen" 
-        AllowsTransparency="True" 
+        AllowsTransparency="False"
+        ResizeMode="CanResizeWithGrip"
         WindowStyle="None" >
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
@@ -22,7 +23,14 @@
                 <ColumnDefinition Width="250"/>
                 <ColumnDefinition Width="550*"/>
             </Grid.ColumnDefinitions>
-            <ScrollViewer Grid.Column="1">
+            <DockPanel Grid.Column="0"
+                       Background="#FF2C2C2C">
+                <Grid x:Name="ProfileGrid">
+                    
+                </Grid>
+            </DockPanel>
+            <ScrollViewer Grid.Column="1"
+                          Background="#FF646464">
                 <Grid x:Name="GameGrid">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="20*"/>
