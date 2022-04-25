@@ -77,7 +77,7 @@ namespace GameStore.Custom_Controlls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GameStore;V1.0.0.0;component/custom%20controlls/windowbordermaxbox.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GameStore;component/custom%20controlls/windowbordermaxbox.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Custom Controlls\WindowBorderMaxBox.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

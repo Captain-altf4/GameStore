@@ -10,7 +10,7 @@
     <Compile Update="Custom Controlls\WindowBorder.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Custom Controlls\WindowBorder_MaxBox.xaml.cs">
+    <Compile Update="Custom Controlls\WindowBorderMaxBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Views\RegWindow.xaml.cs">
@@ -24,7 +24,7 @@
     <Page Update="Custom Controlls\WindowBorder.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Custom Controlls\WindowBorder_MaxBox.xaml">
+    <Page Update="Custom Controlls\WindowBorderMaxBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\AuthWindow.xaml">

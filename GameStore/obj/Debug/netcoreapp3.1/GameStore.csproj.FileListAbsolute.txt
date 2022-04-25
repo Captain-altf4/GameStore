@@ -93,6 +93,5 @@ F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Ga
 F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image5.jpg
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.g.cs
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.baml
-F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder_MaxBox.g.cs
-F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder_MaxBox.baml
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.g.cs
+F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.baml
