@@ -25,6 +25,29 @@ namespace GameStore.Views
             windowBorder.SetValue(Grid.RowProperty, 0);
             MainGrid.Children.Add(windowBorder);
             FillGrid();
+            LoadAvatar();
+        }
+
+        void LoadAvatar()
+        {
+            using (DBContext db = new DBContext())
+            {
+                User currentUser = db.User.Where(u => u.Id == LoginData.CurrentUser.Id).FirstOrDefault();
+                if (currentUser.Avatar.Length == 0)
+                {
+                    var image = new BitmapImage();
+                    string exePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+                    string folderPath = System.IO.Path.GetDirectoryName(exePath);
+                    image.BeginInit();
+                    image.UriSource = new Uri(folderPath + "\\Images\\" + "Default Avatar.jpg");
+                    image.EndInit();
+                    iAvatar.Source = image;
+                }
+                else
+                {
+                    iAvatar.Source = DataTransform.ByteToJpg(currentUser.Avatar);
+                }
+            }
         }
 
         void FillGrid()

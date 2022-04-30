@@ -95,3 +95,24 @@ F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\Sto
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.baml
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.g.cs
 F:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.baml
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image1.jpg
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image2.jpg
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image3.jpg
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image4.jpg
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Games\image5.jpg
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\EntityFramework.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder.g.cs
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.g.cs
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.g.cs
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorder.baml
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Custom Controlls\WindowBorderMaxBox.baml
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\Views\StoreWindow.baml
+E:\Ли Александр\GameStore\GameStore\obj\Debug\netcoreapp3.1\GameStore.GeneratedMSBuildEditorConfig.editorconfig
+F:\Ли Александр\GameStore\GameStore\bin\Debug\netcoreapp3.1\Images\Default Avatar.jpg

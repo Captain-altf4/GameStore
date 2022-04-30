@@ -26,7 +26,16 @@ namespace GameStore
                 using (DBContext db = new DBContext())
                 {
                     db.Database.Initialize(true);
-
+                    /* Код для удаления базы данных
+                    foreach (var u in db.User)
+                    {
+                        db.User.Remove(u);
+                    }
+                    foreach (var g in db.Game)
+                    {
+                        db.Game.Remove(g);
+                    }
+                    db.SaveChanges();*/
                     if (db.User.Count() == 0 && db.Game.Count() == 0)
                     {
                         string imagePath = @"Images\Games\";

@@ -30,6 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Images\Default Avatar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Images\Games\image1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
